@@ -1,0 +1,152 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("./flaticon.ttf?1ac939c3de14e206ec4523512a847cea") format("truetype"),
+url("./flaticon.woff?1ac939c3de14e206ec4523512a847cea") format("woff"),
+url("./flaticon.woff2?1ac939c3de14e206ec4523512a847cea") format("woff2"),
+url("./flaticon.eot?1ac939c3de14e206ec4523512a847cea#iefix") format("embedded-opentype"),
+url("./flaticon.svg?1ac939c3de14e206ec4523512a847cea#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-hookah:before {
+    content: "\f101";
+}
+.flaticon-rickshaw:before {
+    content: "\f102";
+}
+.flaticon-fireworks:before {
+    content: "\f103";
+}
+.flaticon-namaste:before {
+    content: "\f104";
+}
+.flaticon-namaste-1:before {
+    content: "\f105";
+}
+.flaticon-candle:before {
+    content: "\f106";
+}
+.flaticon-rupee:before {
+    content: "\f107";
+}
+.flaticon-india:before {
+    content: "\f108";
+}
+.flaticon-candle-1:before {
+    content: "\f109";
+}
+.flaticon-rickshaw-1:before {
+    content: "\f10a";
+}
+.flaticon-sacred-cow:before {
+    content: "\f10b";
+}
+.flaticon-gate-of-india:before {
+    content: "\f10c";
+}
+.flaticon-kumbh-kalash:before {
+    content: "\f10d";
+}
+.flaticon-lotus:before {
+    content: "\f10e";
+}
+.flaticon-bagpipes:before {
+    content: "\f10f";
+}
+.flaticon-buddha:before {
+    content: "\f110";
+}
+.flaticon-rangoli:before {
+    content: "\f111";
+}
+.flaticon-yagna:before {
+    content: "\f112";
+}
+.flaticon-elephant:before {
+    content: "\f113";
+}
+.flaticon-tea:before {
+    content: "\f114";
+}
+.flaticon-badge:before {
+    content: "\f115";
+}
+.flaticon-kathakali:before {
+    content: "\f116";
+}
+.flaticon-oil-lamp:before {
+    content: "\f117";
+}
+.flaticon-gate-of-india-1:before {
+    content: "\f118";
+}
+.flaticon-cross:before {
+    content: "\f119";
+}
+.flaticon-chakra:before {
+    content: "\f11a";
+}
+.flaticon-taj-mahal:before {
+    content: "\f11b";
+}
+.flaticon-kumbh-kalash-1:before {
+    content: "\f11c";
+}
+.flaticon-sweets:before {
+    content: "\f11d";
+}
+.flaticon-muslim:before {
+    content: "\f11e";
+}
+.flaticon-oil-lamp-1:before {
+    content: "\f11f";
+}
+.flaticon-swastika:before {
+    content: "\f120";
+}
+.flaticon-ganesha:before {
+    content: "\f121";
+}
+.flaticon-turkey:before {
+    content: "\f122";
+}
+.flaticon-turban:before {
+    content: "\f123";
+}
+.flaticon-kite:before {
+    content: "\f124";
+}
+.flaticon-india-1:before {
+    content: "\f125";
+}
+.flaticon-drum:before {
+    content: "\f126";
+}
+.flaticon-cobra:before {
+    content: "\f127";
+}
+.flaticon-om:before {
+    content: "\f128";
+}
+.flaticon-sitar:before {
+    content: "\f129";
+}
+.flaticon-phone:before {
+    content: "\f12a";
+}
+.flaticon-email:before {
+    content: "\f12b";
+}
+.flaticon-placeholder:before {
+    content: "\f12c";
+}

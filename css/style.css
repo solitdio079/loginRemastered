@@ -1,0 +1,477 @@
+/*
+  Sign in & Sign up Template
+  Author: Ciuca Cristian (Criatix)
+  Author URL: https://www.ciucacristi.tk/
+  Framework: Bootstrap v5.0
+  Version: v2.0
+  Demo: https://ciucacristi.tk/signin
+*/
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    background: linear-gradient(325deg, #5046ff, #d5d5d5);
+    background-size: 400% 400%;
+    overflow-x: hidden;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
+/* Remove outline from all elements */
+
+*:focus {
+    outline: none !important;
+}
+
+
+/* Remove outline from inputs */
+
+.form-control:focus {
+    outline: none;
+    box-shadow: none !important;
+}
+
+
+/* Align any item to center */
+
+.centered {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+
+/* Links */
+
+.links {
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+
+/* Main Left Container */
+
+.leftContainer {
+    padding: 3rem;
+}
+
+
+/* Login Card Container */
+
+
+/* Sign in, Sign up container */
+
+.signPanel {
+    background-color: #fff;
+    width: 80%;
+    min-height: 50rem;
+    border-radius: 0.4rem;
+    display: block;
+    margin: 0 auto;
+    padding: 4rem;
+}
+
+
+/* Login Title */
+
+.nameTitle {
+    font-family: "Poppins ExtraBold", sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+/* Login Description */
+
+.mainDescription {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #868686;
+}
+
+
+/* Nav Links */
+
+.nav-pills button {
+    color: #41465c;
+    background: none;
+    border: none;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+
+/* Nav Links */
+
+.nav-item .active {
+    color: #fdc094 !important;
+    background: none !important;
+    border-bottom: 2px solid #fdc094;
+    border-radius: 0px;
+}
+
+
+/* Active Input forms from login container */
+
+.tab-pane input:focus {
+    border-bottom: 1px solid #fdc094 !important;
+    outline: none;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 1px 2px 15px 1px rgba(0, 0, 0, 0.07);
+}
+
+
+/* Sign in / Sign up tab content container */
+
+.tab-content {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+
+/* Input forms from login container */
+
+.form-control {
+    font-family: "Poppins", sans-serif;
+    height: 4.5rem;
+    font-size: 0.8rem;
+    border-radius: 0px;
+    outline: none;
+    width: 100%;
+    border: none;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border-bottom: 1px solid #f1ecec;
+}
+
+
+/* Container with inputs forms */
+
+.inputs-container {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 1px 2px 20px 1px rgba(0, 0, 0, 0.06);
+}
+
+
+/* Buttons */
+
+
+/* Blue Gradient Button */
+
+.btnGradientYellow {
+    background-image: linear-gradient(to right, #ffa0a0, #ffe2a0);
+    box-shadow: 0px 15px 20px -10px #ffa0a0;
+    padding: 0.9rem 2rem 0.9rem 2rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    margin-right: 1rem;
+    outline: none;
+    border: none;
+    color: #fff;
+    transition: 0.2s;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+
+/* Blue Gradient Button Hover */
+
+.btnGradientYellow:hover {
+    box-shadow: none;
+}
+
+
+/* Button Close Modal */
+
+.btnGradientLight {
+    background-image: linear-gradient(to right, #e4e4e4, #f5f6f8);
+    box-shadow: 0px 5px 15px -5px #ccc;
+    padding: 0.9rem 2rem 0.9rem 2rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    font-family: "Poppins", sans-serif;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    outline: none;
+    border: none;
+    color: #000;
+    transition: 0.2s;
+}
+
+
+/* Light Button Hover Effect */
+
+.btnGradientLight:hover {
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1), 0px 5px 20px 0px rgba(0, 0, 0, 0.03);
+}
+
+
+/* End Buttons */
+
+
+/* Forgot Password Modal Window */
+
+
+/* Modal Body */
+
+.modal-body {
+    padding: 3rem;
+}
+
+
+/* Modal Title */
+
+.modal-title {
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: "Poppins SemiBold", sans-serif;
+}
+
+
+/* Modal Icon */
+
+.modal-icon {
+    text-align: center !important;
+    margin-top: 1.2rem;
+    font-size: 2.5rem;
+    color: #ffa0a0;
+}
+
+
+/* Modal Description Text */
+
+.modal-description {
+    font-size: 0.9rem;
+    text-align: center;
+    font-family: "Questrial", sans-serif;
+}
+
+#forgotPassModal .form-control {
+    background-color: #f5f4f4;
+    margin-top: 2rem !important;
+}
+
+
+/* Modal Button Submit */
+
+.btn-forgotPass {
+    margin: 0 auto;
+    display: block;
+    margin-top: 2rem;
+    border-radius: 0.2rem;
+    background-color: #0c0ff6;
+    padding: 0.6rem 2.5rem 0.6rem 2.5rem;
+    font-family: "Questrial", sans-serif;
+}
+
+
+/* End Forgot Password Modal Window */
+
+
+/* Checkbox */
+
+
+/* Checkbox container */
+
+.form-check {
+    margin-top: 2rem;
+}
+
+
+/* Checkbox settings */
+
+input[type="checkbox"] {
+    display: none;
+}
+
+
+/* Checkbox settings */
+
+input[type="checkbox"]+label {
+    display: block;
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    padding-left: 35px;
+    color: #666565;
+    cursor: pointer;
+    font-size: 0.85rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+
+/* Checkbox settings */
+
+input[type="checkbox"]+label:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Checkbox settings */
+
+input[type="checkbox"]+label:before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #303030;
+    border-radius: 0.2rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.6;
+    -webkit-transition: all 0.12s, border-color 0.08s;
+    transition: all 0.12s, border-color 0.08s;
+}
+
+
+/* Checkbox settings */
+
+input[type="checkbox"]:checked+label:before {
+    width: 10px;
+    top: -5px;
+    left: 5px;
+    border-radius: 0;
+    opacity: 1;
+    border: 1px solid #ffa0a0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/* End Checkbox */
+
+
+/* Popup Styling*/
+
+#popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    max-width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #330;
+    background-color: #E3E6F3;
+    padding: 10px;
+    border-radius: .5rem;
+    z-index: 1000;
+    transition: 1s ease;
+}
+
+#popup img {
+    width: 100%;
+}
+
+#overlay {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+    z-index: 999;
+    transition: 1s ease;
+}
+
+
+/* Responsive Media Queries */
+
+@media screen and (max-width: 1430px) {
+    .signPanel {
+        width: 100%;
+    }
+}
+
+
+/* Responsive Media Queries */
+
+@media screen and (max-width: 1200px) {
+    .left-container {
+        padding: 2rem;
+    }
+    .tab-content {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+}
+
+
+/* End Login Card Container */
+
+
+/* Right Container */
+
+
+/* Right container with the content */
+
+.rightPanel {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding-right: 15rem;
+}
+
+
+/* Right Main Title */
+
+.main-title {
+    font-size: 5rem;
+    font-family: "Poppins Black", sans-serif;
+    color: #fff;
+    line-height: 5rem;
+}
+
+
+/* Right Description */
+
+.description {
+    color: #fff;
+    margin-top: 3rem;
+    padding-right: 5rem;
+    text-align: left;
+}
+
+
+/* Responsive Media Queries */
+
+@media screen and (max-width: 1200px) {
+    .main-title {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    .description {
+        padding-right: 0rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .rightContainer {
+        display: none;
+    }
+}
+
+
+/* End Right Container */

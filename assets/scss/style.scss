@@ -1,0 +1,75 @@
+/*-----------------------------------------------------------------------------------
+    Template Name: Golden Tour Tarvel and tourism Booking HTML Template
+    Template URI: https://www.templatemonster.com/authors/slidesigmathemes/
+    Author: Slidesigma
+    Author URI: https://www.templatemonster.com/authors/slidesigmathemes/
+    Version: 1.0
+
+    Note: This is Main Style Scss File. 
+-----------------------------------------------------------------------------------
+    CSS INDEX
+    ===================
+    Common
+    Header
+    -- Off canvas menu
+    -- Breadcrumb CSS
+    Banner
+    About
+    Destination Tab
+    Call TO Action
+    Text Block
+    Testimonial
+    Latest Post 
+    Core Feature
+    -- Dark Style
+    Destination
+    -- Destination Gird
+    -- Destination List
+    -- Destination Slider
+      -- Destination Slider One
+      -- Destination Slider Two
+    -- Destination Details
+    Counter
+    Our Menu
+    Contact
+    -- Contact info box
+    Offers
+    Gallery
+    News
+    -- News Details
+    -- Paginations
+    -- Sidebars
+    Booking Form
+    Places
+    -- Places Details
+    Restaurant
+    Footer
+    -- Subscibe
+    -- Widgets
+    -- Copy Right
+    -- Back to top
+    
+-----------------------------------------------------------------------------------*/
+
+@import 'variables';
+@import 'mixin';
+@import 'common';
+@import 'header';
+@import 'banner';
+@import 'about';
+@import 'roomtab';
+@import 'cta';
+@import 'text-block';
+@import 'testimonial';
+@import 'latest-post';
+@import 'feature';
+@import 'destination';
+@import 'counter';
+@import 'menu';
+@import 'contact';
+@import 'offers_gallery';
+@import 'news';
+@import 'booking-form';
+@import 'places';
+@import 'restaurant';
+@import 'footer';

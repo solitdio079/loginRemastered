@@ -1,0 +1,201 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?1ac939c3de14e206ec4523512a847cea") format("truetype"),
+url("./flaticon.woff?1ac939c3de14e206ec4523512a847cea") format("woff"),
+url("./flaticon.woff2?1ac939c3de14e206ec4523512a847cea") format("woff2"),
+url("./flaticon.eot?1ac939c3de14e206ec4523512a847cea#iefix") format("embedded-opentype"),
+url("./flaticon.svg?1ac939c3de14e206ec4523512a847cea#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "hookah": "\f101",
+    "rickshaw": "\f102",
+    "fireworks": "\f103",
+    "namaste": "\f104",
+    "namaste-1": "\f105",
+    "candle": "\f106",
+    "rupee": "\f107",
+    "india": "\f108",
+    "candle-1": "\f109",
+    "rickshaw-1": "\f10a",
+    "sacred-cow": "\f10b",
+    "gate-of-india": "\f10c",
+    "kumbh-kalash": "\f10d",
+    "lotus": "\f10e",
+    "bagpipes": "\f10f",
+    "buddha": "\f110",
+    "rangoli": "\f111",
+    "yagna": "\f112",
+    "elephant": "\f113",
+    "tea": "\f114",
+    "badge": "\f115",
+    "kathakali": "\f116",
+    "oil-lamp": "\f117",
+    "gate-of-india-1": "\f118",
+    "cross": "\f119",
+    "chakra": "\f11a",
+    "taj-mahal": "\f11b",
+    "kumbh-kalash-1": "\f11c",
+    "sweets": "\f11d",
+    "muslim": "\f11e",
+    "oil-lamp-1": "\f11f",
+    "swastika": "\f120",
+    "ganesha": "\f121",
+    "turkey": "\f122",
+    "turban": "\f123",
+    "kite": "\f124",
+    "india-1": "\f125",
+    "drum": "\f126",
+    "cobra": "\f127",
+    "om": "\f128",
+    "sitar": "\f129",
+    "phone": "\f12a",
+    "email": "\f12b",
+    "placeholder": "\f12c",
+);
+
+.flaticon-hookah:before {
+    content: map-get($flaticon-map, "hookah");
+}
+.flaticon-rickshaw:before {
+    content: map-get($flaticon-map, "rickshaw");
+}
+.flaticon-fireworks:before {
+    content: map-get($flaticon-map, "fireworks");
+}
+.flaticon-namaste:before {
+    content: map-get($flaticon-map, "namaste");
+}
+.flaticon-namaste-1:before {
+    content: map-get($flaticon-map, "namaste-1");
+}
+.flaticon-candle:before {
+    content: map-get($flaticon-map, "candle");
+}
+.flaticon-rupee:before {
+    content: map-get($flaticon-map, "rupee");
+}
+.flaticon-india:before {
+    content: map-get($flaticon-map, "india");
+}
+.flaticon-candle-1:before {
+    content: map-get($flaticon-map, "candle-1");
+}
+.flaticon-rickshaw-1:before {
+    content: map-get($flaticon-map, "rickshaw-1");
+}
+.flaticon-sacred-cow:before {
+    content: map-get($flaticon-map, "sacred-cow");
+}
+.flaticon-gate-of-india:before {
+    content: map-get($flaticon-map, "gate-of-india");
+}
+.flaticon-kumbh-kalash:before {
+    content: map-get($flaticon-map, "kumbh-kalash");
+}
+.flaticon-lotus:before {
+    content: map-get($flaticon-map, "lotus");
+}
+.flaticon-bagpipes:before {
+    content: map-get($flaticon-map, "bagpipes");
+}
+.flaticon-buddha:before {
+    content: map-get($flaticon-map, "buddha");
+}
+.flaticon-rangoli:before {
+    content: map-get($flaticon-map, "rangoli");
+}
+.flaticon-yagna:before {
+    content: map-get($flaticon-map, "yagna");
+}
+.flaticon-elephant:before {
+    content: map-get($flaticon-map, "elephant");
+}
+.flaticon-tea:before {
+    content: map-get($flaticon-map, "tea");
+}
+.flaticon-badge:before {
+    content: map-get($flaticon-map, "badge");
+}
+.flaticon-kathakali:before {
+    content: map-get($flaticon-map, "kathakali");
+}
+.flaticon-oil-lamp:before {
+    content: map-get($flaticon-map, "oil-lamp");
+}
+.flaticon-gate-of-india-1:before {
+    content: map-get($flaticon-map, "gate-of-india-1");
+}
+.flaticon-cross:before {
+    content: map-get($flaticon-map, "cross");
+}
+.flaticon-chakra:before {
+    content: map-get($flaticon-map, "chakra");
+}
+.flaticon-taj-mahal:before {
+    content: map-get($flaticon-map, "taj-mahal");
+}
+.flaticon-kumbh-kalash-1:before {
+    content: map-get($flaticon-map, "kumbh-kalash-1");
+}
+.flaticon-sweets:before {
+    content: map-get($flaticon-map, "sweets");
+}
+.flaticon-muslim:before {
+    content: map-get($flaticon-map, "muslim");
+}
+.flaticon-oil-lamp-1:before {
+    content: map-get($flaticon-map, "oil-lamp-1");
+}
+.flaticon-swastika:before {
+    content: map-get($flaticon-map, "swastika");
+}
+.flaticon-ganesha:before {
+    content: map-get($flaticon-map, "ganesha");
+}
+.flaticon-turkey:before {
+    content: map-get($flaticon-map, "turkey");
+}
+.flaticon-turban:before {
+    content: map-get($flaticon-map, "turban");
+}
+.flaticon-kite:before {
+    content: map-get($flaticon-map, "kite");
+}
+.flaticon-india-1:before {
+    content: map-get($flaticon-map, "india-1");
+}
+.flaticon-drum:before {
+    content: map-get($flaticon-map, "drum");
+}
+.flaticon-cobra:before {
+    content: map-get($flaticon-map, "cobra");
+}
+.flaticon-om:before {
+    content: map-get($flaticon-map, "om");
+}
+.flaticon-sitar:before {
+    content: map-get($flaticon-map, "sitar");
+}
+.flaticon-phone:before {
+    content: map-get($flaticon-map, "phone");
+}
+.flaticon-email:before {
+    content: map-get($flaticon-map, "email");
+}
+.flaticon-placeholder:before {
+    content: map-get($flaticon-map, "placeholder");
+}
