@@ -236,12 +236,8 @@
     <section class="about-section pt-115 pb-115">
         <div class="container">
             <div class="down-arrow-wrap text-center">
-                <a href="#" class="down-arrow"><i class="fal fa-plus"></i></a>
+                <a href="#addTicketPopup" id="showTicketForm" class="down-arrow"><i class="fal fa-plus"></i></a>
             </div>
-
-
-
-
         </div>
     </section>
     <!--====== ABOUT PART END ======-->
@@ -301,7 +297,7 @@
 
     </div>
 
-    <div id="addTicketPopup">
+    <div id="addTicketPopup" class="white-popup mfp-hide">
         <div class="section-title text-center mb-30">
             <h3>Ajoutez Ticket</h3>
         </div>
@@ -381,7 +377,7 @@
 
     </div>
 
-    <div id="overlay"></div>
+    <div id="overlay" style="display: none;"></div>
 
 
 
@@ -415,6 +411,10 @@
 
     <script>
         $(document).ready(function() {
+            $("#showTicketForm").magnificPopup({
+                type: "inline",
+            });
+
 
             $.post("php/ajax.inc.php",{compFetchSubmit:"action"}, function(data){
                 if(JSON.parse(data)){
@@ -437,7 +437,8 @@
             // Add Ticket Form
             $("#addTicketForm").submit(function(e){
                 e.preventDefault();
-                var company =$("#compSlect").val();
+                var company =$("#compSelect").val();
+                alert(company);
                 var price = $("#price").val();
                 var bus_type = $("#bus_type").val();
                 var destination =$("#destination").val();
@@ -457,7 +458,14 @@
                     total_number:total_number,
                     departure_date: departure_date
                 },function(data){
-                    $("#compError").html('<p style="color: green;">'+ data +'</p>');
+                    if (data != "Success!") {
+                           $("#compError").html('<p style="color: red">' + data +'</p>');
+
+                        } else {
+                            $("#compError").html('<p style="color:green"> Ticket Ajoute!</p>');
+                        }
+
+                    
                 });
             });
 

@@ -66,9 +66,63 @@ elseif(isset($_POST["compFetchSubmit"])){
 }
 //All Companies Fetch function
 elseif(isset($_POST["addTicketSubmit"])){
-    echo "Received!";
+    include_once("../classes/av_ticketscontrol.class.php");
+    $company= (int)$_POST["company"];
+    $destination = $_POST["destination"];
+    $departure_place = $_POST["departure_place"];
+    $departure_hour = $_POST["departure_hour"];
+    $departure_date = $_POST["departure_date"]; 
+    $bus_type = $_POST["bus_type"]; 
+    $price = $_POST["price"]; 
+    $total_number = $_POST["total_number"];
+
+    $ticket = new Av_ticketscontrol();
+    
+    $ticket-> createAvTicket($company, $destination, $departure_place, $departure_hour, $departure_date, $bus_type, $price, $total_number);
+    echo "Success!";
+    exit();
+
 
 }
+/**--
+ * clientIndex Page 
+ */
+
+ // Get Ticket from search
+else if(isset($_POST["ticketCheckSubmit"])){
+    $destination= $_POST["destination"];
+    $departure_place = $_POST["departure_place"];
+    $departure_date = $_POST["departure_date"];
+    include_once "../classes/av_ticketsview.class.php";
+    $foundTickets = new Av_ticketsview();
+    $foundTickets = $foundTickets->takeAvTicketSearch($destination, $departure_place, $departure_date);
+    if($foundTickets == null){
+        echo "Pas de billet pour cette recherche!";
+        exit();
+
+    }else{
+        echo json_encode($foundTickets);
+        exit();
+    }
+
+}
+
+//Get companies from ticket search
+elseif(isset($_POST["compGroupSubmit"])){
+    include_once "../classes/compview.class.php";
+    $companies = new Compview();
+    $companies = $companies->takeCompSearch($_POST["companies"]);
+    if($companies == null){
+        echo "Erreur inconnue!";
+        exit();
+
+
+    }else{
+        echo json_encode($companies);
+        exit();
+    }
+}
+
 else {
     echo "Acces Refuse";
     exit();

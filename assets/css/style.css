@@ -7723,6 +7723,10 @@ footer .footer-widget-area .widget.nav-widget ul li:last-child {
     footer .footer-widget-area .widget.contact-widget {
         padding-left: 70px;
     }
+    #addTicketPopup,
+    #checkTicketPopup {
+        min-width: 80vw;
+    }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -7886,6 +7890,10 @@ footer .copyright-area .copyright-text.copyright-two {
         margin-top: 10px;
         text-align: center;
     }
+    #addTicketPopup,
+    #checkTicketPopup {
+        min-width: 80vw;
+    }
 }
 
 footer .copyright-area .footer-menu ul li {
@@ -7917,6 +7925,10 @@ footer .copyright-area .footer-menu ul li::before {
 @media (max-width: 399px) {
     footer .copyright-area .footer-menu ul li::before {
         display: none;
+    }
+    #addTicketPopup,
+    #checkTicketPopup {
+        min-width: 80vw;
     }
 }
 
@@ -8212,6 +8224,10 @@ footer .copyright-area.light-theme .footer-menu ul li::before {
     .destination-gird-loop .destination-box .destination-desc .item-boxs .item-boxs-item .item-remove {
         margin-top: 5px;
     }
+    #addTicketPopup,
+    #checkTicketPopup {
+        min-width: 80vw;
+    }
 }
 
 
@@ -8281,13 +8297,15 @@ footer .copyright-area.light-theme .footer-menu ul li::before {
     transition: 1s ease;
 }
 
-#addTicketPopup {
+#addTicketPopup,
+#checkTicketPopup {
     position: fixed;
     top: 50%;
     left: 50%;
     /* bring your own prefixes */
     transform: translate(-50%, -50%);
-    max-width: 80vw;
+    max-height: 100%;
+    max-width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -8296,6 +8314,7 @@ footer .copyright-area.light-theme .footer-menu ul li::before {
     padding: 2rem;
     z-index: 1000;
     transition: 1s ease;
+    overflow: auto;
 }
 
 #addTicketPopup input,

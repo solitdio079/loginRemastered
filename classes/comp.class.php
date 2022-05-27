@@ -24,6 +24,15 @@ class Comp extends Dbh {
         $result = $stmt->fetchAll();
         return $result;
     }
+    protected function getCompSearch($compId){
+        $compId = implode(",", $compId);
+        $sql="SELECT * FROM `company` WHERE compId IN(?)";
+        $stmt = $this->connect()->prepare($sql);
+        $stmt->execute([$compId]) or die(print_r($stmt->errorInfo(), true));
+        $result = $stmt->fetchAll();
+        return $result;
+    }
+
 
     protected function deleteComp($compId){
         $sql="DELETE FROM `company` WHERE compId=?";

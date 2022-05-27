@@ -11,4 +11,8 @@ class Compview extends Comp{
         $result = $this->getOneComp($compId);
         return $result;
     }
+    public function takeCompSearch($compId){
+        $result = $this->getCompSearch($compId);
+        return $result;
+    }
 }

@@ -35,9 +35,9 @@ class Av_tickets extends Dbh{
     }
 
     protected function getAvTicketSearch($destination, $departure_place,$departure_date){
-        $sql="SELECT * FROM `av_tickets` WHERE destination=? AND departure_place=? AND departure_date=?";
+        $sql="SELECT * FROM `av_tickets` WHERE destination LIKE '%$destination%' AND departure_place LIKE '%$departure_place%'  AND departure_date=?";
         $stmt=$this->connect()->prepare($sql);
-        $stmt->execute([$destination, $departure_date,$departure_place]) or die(print_r($stmt->errorInfo(),true));
+        $stmt->execute([$departure_date]) or die(print_r($stmt->errorInfo(),true));
         $result=$stmt->fetchAll();
         return $result;
 
